@@ -36,11 +36,6 @@
 
 &trackball {
     status = "okay";
-    /* Fix sensor orientation here (try this first) */
-    zmk,transform {
-        swap-x-y;
-        invert-y;
-    };
 };
 
 / {
@@ -55,5 +50,6 @@
 	};
 
 };
+
 
 
