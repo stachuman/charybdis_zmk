@@ -34,8 +34,7 @@
 &trackball {
     status = "okay";
     /* Fix sensor orientation here (try this first) */
-    
-	swap-x-y;
+    swap-xy;
     invert-y;
 };
 
@@ -46,6 +45,7 @@
     device = <&trackball>;
   };
 };
+
 
 
 
