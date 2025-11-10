@@ -38,7 +38,7 @@
     zmk,transform {
         /* Start with this combination; adjust as needed */
         swap-x-y;
-        invert-y;
+        invert-x;
     };
 };
 
@@ -49,4 +49,5 @@
     device = <&trackball>;
   };
 };
+
 
