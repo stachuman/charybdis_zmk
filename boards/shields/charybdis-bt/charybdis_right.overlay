@@ -34,12 +34,6 @@
 &trackball {
     status = "okay";
 
-	/* correct orientation */
-    zmk,transform {
-        /* Start with this combination; adjust as needed */
-        swap-x-y;
-        invert-x;
-    };
 };
 
 // https://github.com/badjeff/zmk-pmw3610-driver
@@ -49,5 +43,6 @@
     device = <&trackball>;
   };
 };
+
 
 
