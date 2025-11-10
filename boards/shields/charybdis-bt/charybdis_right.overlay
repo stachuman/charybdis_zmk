@@ -33,10 +33,6 @@
 
 &trackball {
     status = "okay";
-    /* Fix sensor orientation here (try this first) */
-    swap-xy;
-    invert-y;
-    invert-x;
 };
 
 // https://github.com/badjeff/zmk-pmw3610-driver
@@ -46,6 +42,7 @@
     device = <&trackball>;
   };
 };
+
 
 
 
