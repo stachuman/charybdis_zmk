@@ -36,6 +36,13 @@
 
 &trackball {
     status = "okay";
+
+	/* correct orientation */
+    zmk,transform {
+        /* Start with this combination; adjust as needed */
+        swap-x-y;
+        invert-x;
+    };
 };
 
 / {
@@ -48,4 +55,5 @@
 		device = <&trackball>;
 		relay-channel = <111>;
 	};
+
 };
