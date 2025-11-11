@@ -52,8 +52,16 @@
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
+
+        /* Rotation 
+        20° → cos=0.9396926, sin=0.3420201 → Q15: cos=30792, sin=11207
+        25° → cos=0.9063078, sin=0.4226183 → Q15: cos=29698, sin=13848
+        30° → cos=0.8660254, sin=0.5 → Q15: cos=28378, sin=16384 */
+        rot-cos-q15 = <30792>;
+        rot-sin-q15 = <11207>;  
     };
 };
+
 
 
 
