@@ -1,3 +1,32 @@
+Custom changes - precise rotation implemented - as I did want to precisely set alignment of horizont in the trackball.
+See charybdis-bt - dtsi file:
+
+trackball: trackball@0 {
+    status = "okay";
+    compatible = "pixart,pmw3610";
+    reg = <0>;
+    spi-max-frequency = <2000000>;
+    irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    cpi = <1000>;
+
+    /* Standard xy rotation*/
+    swap-xy;
+    invert-y;
+
+    evt-type = <INPUT_EV_REL>;
+    x-input-code = <INPUT_REL_X>;
+    y-input-code = <INPUT_REL_Y>;
+
+    /* Precise rotation - new*/
+    rot-cos-q15 = <30792>;   /* cos(20°) */
+    rot-sin-q15 = <11207>;   /* sin(20°) */
+};
+
+Some sample values:
+20° → cos=0.9396926, sin=0.3420201 → Q15: cos=30792, sin=11207
+25° → cos=0.9063078, sin=0.4226183 → Q15: cos=29698, sin=13848
+30° → cos=0.8660254, sin=0.5 → Q15: cos=28378, sin=16384
+
 [![.github/workflows/build.yml](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware/actions/workflows/build.yml/badge.svg)](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware/actions/workflows/build.yml)
 
 ## Intro
