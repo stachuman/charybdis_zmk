@@ -1,6 +1,7 @@
 Custom changes - precise rotation implemented - as I did want to precisely set alignment of horizont in the trackball.
 See charybdis-bt - dtsi file:
 
+```
 trackball: trackball@0 {
     status = "okay";
     compatible = "pixart,pmw3610";
@@ -18,6 +19,7 @@ trackball: trackball@0 {
     rot-cos-q15 = <30792>;   /* cos(20°) */
     rot-sin-q15 = <11207>;   /* sin(20°) */
 };
+```
 
 Some sample values:
 
