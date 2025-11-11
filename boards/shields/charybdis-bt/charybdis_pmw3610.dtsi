@@ -46,13 +46,14 @@
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         cpi = <1000>;
         /* Align sensor orientation with the hardware */
-        // swap-xy;
+        swap-xy;
         // invert-y;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
     };
 };
+
 
 
 
