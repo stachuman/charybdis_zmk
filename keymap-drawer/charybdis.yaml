@@ -52,8 +52,8 @@ layers:
   - {t: TAB, h: NUMBERS}
   - ENTER
   - {t: LEFT GUI, h: NAV-FUN}
-  - {t: SPACE, h: NUMBERS}
-  - RIGHT ALT
+  - {t: RIGHT ALT, h: NUMBERS}
+  - SPACE
   - R CLK
   - L CLK
   - NAV-FUN
