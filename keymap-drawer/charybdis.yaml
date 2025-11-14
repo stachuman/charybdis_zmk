@@ -53,7 +53,7 @@ layers:
   - ENTER
   - {t: LEFT GUI, h: NAV-FUN}
   - {t: SPACE, h: NUMBERS}
-  - LEFT ALT
+  - RIGHT ALT
   - R CLK
   - L CLK
   - NAV-FUN
